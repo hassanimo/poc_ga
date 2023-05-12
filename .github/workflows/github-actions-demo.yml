@@ -18,6 +18,6 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
   job2:
     runs-on: ubuntu-latest
-      steps:
+    steps:
       - run: echo "this is a step from job2"
         
