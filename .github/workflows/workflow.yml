@@ -1,0 +1,15 @@
+name: GitHub Actions Demo -  workflows
+run-name: ${{ github.actor }} is testing out jira integration
+on: [push]
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "run1"
+      - run: echo "run2"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this is a step from job2"
+
+        
