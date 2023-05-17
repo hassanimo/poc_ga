@@ -13,6 +13,7 @@ jobs:
     steps:
       - run: echo "this is a step from job2"
   job3:
+    needs: job2
     runs-on: ubuntu-latest
     steps:
       - run: echo "this is a step 1 from job3"
