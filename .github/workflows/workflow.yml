@@ -8,8 +8,15 @@ jobs:
       - run: echo "run1"
       - run: echo "run2"
   job2:
+    needs: job1
     runs-on: ubuntu-latest
     steps:
       - run: echo "this is a step from job2"
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo "this is a step from job2"
+        uses: atlassian/gajira-comment@v3
+
 
         
