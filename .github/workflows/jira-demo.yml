@@ -1,6 +1,6 @@
 name: GitHub Actions Demo -  JIRA integration
 run-name: ${{ github.actor }} is testing out jira integration
-on: [push]
+on: workflow_call
 jobs:
   jira:
     runs-on: ubuntu-latest
