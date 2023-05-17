@@ -1,5 +1,5 @@
 name: GitHub Actions Demo -  workflows
-run-name: ${{ github.actor }} is testing out jira integration
+run-name: ${{ github.actor }} is testing out dependents workflows
 on: [push]
 jobs:
   job1:
@@ -15,8 +15,8 @@ jobs:
   job3:
     runs-on: ubuntu-latest
     steps:
-      - name: echo "this is a step from job2"
-        uses: atlassian/gajira-comment@v3
+      - run: echo "this is a step 1 from job3"
+      - run: echo "this is a step 2 from job3"
 
 
         
