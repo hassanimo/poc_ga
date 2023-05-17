@@ -22,7 +22,10 @@ jobs:
     needs: job1
     uses: ./.github/workflows/jira-demo.yml
     secrets: inherit
-
+  job5: 
+    needs: job1
+    uses: ./.github/workflows/github-actions-demo.yml
+    secrets: inherit
 
 
 
