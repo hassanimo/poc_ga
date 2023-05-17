@@ -17,6 +17,8 @@ jobs:
     steps:
       - run: echo "this is a step 1 from job3"
       - run: echo "this is a step 2 from job3"
+      - run: echo "::error file=app.js,line=1::Missing semicolon"
+
 
 
         
